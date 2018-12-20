@@ -29,3 +29,12 @@ func TestCaptchaCase1113to1plusThree(t *testing.T)  {
 	}
 	println(result)
 }
+
+func TestCaptchaCase1114to1plusFour(t *testing.T)  {
+	result := Captcha(1,1,1,4)
+	experd := "1+Four"
+	if result != experd {
+		t.Errorf(result)
+	}
+	println(result)
+}
