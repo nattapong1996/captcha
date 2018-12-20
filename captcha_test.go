@@ -47,3 +47,12 @@ func TestCaptchaCase1224to2DeleteFour(t *testing.T)  {
 	}
 	println(result)
 }
+
+func TestCaptchaCase2224to2DeleteFour(t *testing.T)  {
+	result := Captcha(2,2,2,4)
+	experd := "two-4"
+	if result != experd {
+		t.Errorf(result)
+	}
+	println(result)
+}
