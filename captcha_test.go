@@ -10,7 +10,6 @@ func TestCaptchaCase1111to1plusOne(t *testing.T)  {
 	if result != experd {
 		t.Errorf(result)
 	}
-	println(result)
 }
 
 func TestCaptchaCase1112to1plusTwo(t *testing.T)  {
@@ -19,7 +18,6 @@ func TestCaptchaCase1112to1plusTwo(t *testing.T)  {
 	if result != experd {
 		t.Errorf(result)
 	}
-	println(result)
 }
 func TestCaptchaCase1113to1plusThree(t *testing.T)  {
 	result := Captcha(1,1,1,3)
@@ -27,7 +25,6 @@ func TestCaptchaCase1113to1plusThree(t *testing.T)  {
 	if result != experd {
 		t.Errorf(result)
 	}
-	println(result)
 }
 
 func TestCaptchaCase1114to1plusFour(t *testing.T)  {
@@ -36,7 +33,6 @@ func TestCaptchaCase1114to1plusFour(t *testing.T)  {
 	if result != experd {
 		t.Errorf(result)
 	}
-	println(result)
 }
 
 func TestCaptchaCase1224to2DeleteFour(t *testing.T)  {
@@ -45,7 +41,6 @@ func TestCaptchaCase1224to2DeleteFour(t *testing.T)  {
 	if result != experd {
 		t.Errorf(result)
 	}
-	println(result)
 }
 
 func TestCaptchaCase2224to2DeleteFour(t *testing.T)  {
@@ -54,5 +49,21 @@ func TestCaptchaCase2224to2DeleteFour(t *testing.T)  {
 	if result != experd {
 		t.Errorf(result)
 	}
-	println(result)
+}
+
+
+func TestCountCaptcha2214(t *testing.T)  {
+	result := countCaptCha(2,2,1,4)
+	experd := 6
+	if result != experd {
+		t.Errorf("Ans : %d",result)
+	}
+}
+
+func TestCountCaptcha2424(t *testing.T)  {
+	result := countCaptCha(2,4,2,4)
+	experd := 0
+	if result != experd {
+		t.Errorf("ANS : %d",result)
+	}
 }
